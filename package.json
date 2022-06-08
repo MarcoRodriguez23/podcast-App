@@ -1,0 +1,26 @@
+{
+  "name": "04-podcastapp",
+  "version": "1.0.0",
+  "description": "Bootstrap-5 SASS GULP",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MarcoRodriguez23/podcast-App.git"
+  },
+  "author": "Marco Rodriguez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MarcoRodriguez23/podcast-App/issues"
+  },
+  "homepage": "https://github.com/MarcoRodriguez23/podcast-App#readme",
+  "devDependencies": {
+    "bootstrap": "^5.1.3",
+    "gulp": "^4.0.2",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.52.2"
+  }
+}
