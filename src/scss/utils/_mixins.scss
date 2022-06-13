@@ -8,6 +8,13 @@
     background-position: top center;
 }
 
+@mixin bgIcono($url){
+    background-image: url($url);
+    background-size: 10rem;
+    background-position: 50% 2rem;
+    background-repeat: no-repeat;
+}
+
 @mixin headingBorder($colorTexto, $colorFondo) {
     color: $colorTexto;
     //utilizado para que el contenedor del header solo use el ancho necesario

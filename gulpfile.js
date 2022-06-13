@@ -1,6 +1,8 @@
 const {src,dest,watch,series,parallel} = require ('gulp');
 const sass = require ('gulp-sass')(require('sass'));
 const imagemin = require('gulp-imagemin');
+const purgecss = require('gulp-purgecss');
+const rename = require('gulp-rename');
 
 function css(done){
     //identificar donde esta el archivo
@@ -32,9 +34,23 @@ function imagenes(done){
     done();
 }
 
+function cssBuild(done){
+
+    src('build/css/app.css')
+    .pipe(rename({
+        suffix: '.min'
+    }))
+    .pipe(purgecss({
+        content: ['index.html']
+    }))
+    .pipe(dest('build/css'))
+    done();
+}
+
 
 exports.css = css;
 exports.dev = dev;
 exports.imagenes = imagenes;
+exports.build = cssBuild;
 
 exports.default = parallel(css,dev);

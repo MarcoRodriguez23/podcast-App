@@ -13,3 +13,9 @@
         display: inline-block;
     }
 }
+
+.boton-plan{
+    @extend .btn-header;
+    border: 1px solid $white;
+    display: block;
+}
