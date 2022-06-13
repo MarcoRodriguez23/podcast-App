@@ -37,4 +37,4 @@ exports.css = css;
 exports.dev = dev;
 exports.imagenes = imagenes;
 
-exports.default = parallel(imagenes,css,dev);
+exports.default = parallel(css,dev);
